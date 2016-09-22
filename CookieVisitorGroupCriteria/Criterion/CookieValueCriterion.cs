@@ -45,9 +45,9 @@ namespace CookieVisitorGroupCriteria.Criterion
                         : Model.CookieValue.Equals(cookieValue, StringComparison.CurrentCultureIgnoreCase);
 
                 case CookieValueCondition.IsNot:
-                    return !Model.CaseSensitive
+                    return !(Model.CaseSensitive
                         ? Model.CookieValue.Equals(cookieValue, StringComparison.CurrentCulture)
-                        : Model.CookieValue.Equals(cookieValue, StringComparison.CurrentCultureIgnoreCase);
+                        : Model.CookieValue.Equals(cookieValue, StringComparison.CurrentCultureIgnoreCase));
 
                 default:
                     return false;
