@@ -31,13 +31,13 @@ namespace CookieVisitorGroupCriteria.Criterion
             {
                 case CookieValueCondition.Contains:
                     return Model.CaseSensitive
-                        ? Model.CookieValue.IndexOf(cookieValue, 0, StringComparison.CurrentCulture) >= 0
-                        : Model.CookieValue.IndexOf(cookieValue, 0, StringComparison.CurrentCultureIgnoreCase) >= 0;
+                        ? cookieValue.IndexOf(Model.CookieValue, 0, StringComparison.CurrentCulture) >= 0
+                        : cookieValue.IndexOf(Model.CookieValue, 0, StringComparison.CurrentCultureIgnoreCase) >= 0;
 
                 case CookieValueCondition.DoesNotContain:
                     return !Model.CaseSensitive
-                        ? Model.CookieValue.IndexOf(cookieValue, 0, StringComparison.CurrentCulture) >= 0
-                        : Model.CookieValue.IndexOf(cookieValue, 0, StringComparison.CurrentCultureIgnoreCase) >= 0;
+                        ? cookieValue.IndexOf(Model.CookieValue, 0, StringComparison.CurrentCulture) >= 0
+                        : cookieValue.IndexOf(Model.CookieValue, 0, StringComparison.CurrentCultureIgnoreCase) >= 0;
 
                 case CookieValueCondition.Is:
                     return Model.CaseSensitive
