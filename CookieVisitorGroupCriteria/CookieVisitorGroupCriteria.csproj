@@ -157,6 +157,7 @@
   <ItemGroup>
     <Content Include="lang\CookieVisitorGroupCriteria.xml">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

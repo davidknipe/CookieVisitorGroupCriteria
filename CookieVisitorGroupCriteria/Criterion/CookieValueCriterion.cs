@@ -50,14 +50,14 @@ namespace CookieVisitorGroupCriteria.Criterion
                         : Model.CookieValue.Equals(cookieValue, StringComparison.CurrentCultureIgnoreCase));
 
                 case CookieValueCondition.StartsWith:
-                    return !(Model.CaseSensitive
-                        ? Model.CookieValue.StartsWith(cookieValue, StringComparison.CurrentCulture)
-                        : Model.CookieValue.StartsWith(cookieValue, StringComparison.CurrentCultureIgnoreCase));
+                    return Model.CaseSensitive
+                        ? cookieValue.StartsWith(Model.CookieValue, StringComparison.CurrentCulture)
+                        : cookieValue.StartsWith(Model.CookieValue, StringComparison.CurrentCultureIgnoreCase);
 
                 case CookieValueCondition.EndsWith:
-                    return !(Model.CaseSensitive
-                        ? Model.CookieValue.EndsWith(cookieValue, StringComparison.CurrentCulture)
-                        : Model.CookieValue.EndsWith(cookieValue, StringComparison.CurrentCultureIgnoreCase));
+                    return Model.CaseSensitive
+                        ? cookieValue.EndsWith(Model.CookieValue, StringComparison.CurrentCulture)
+                        : cookieValue.EndsWith(Model.CookieValue, StringComparison.CurrentCultureIgnoreCase);
 
                 default:
                     return false;
