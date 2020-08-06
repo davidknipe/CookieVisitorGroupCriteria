@@ -5,6 +5,8 @@
         Is,
         Contains,
         DoesNotContain,
-        IsNot
+        IsNot,
+        StartsWith,
+        EndsWith
     }
 }

@@ -49,6 +49,16 @@ namespace CookieVisitorGroupCriteria.Criterion
                         ? Model.CookieValue.Equals(cookieValue, StringComparison.CurrentCulture)
                         : Model.CookieValue.Equals(cookieValue, StringComparison.CurrentCultureIgnoreCase));
 
+                case CookieValueCondition.StartsWith:
+                    return !(Model.CaseSensitive
+                        ? Model.CookieValue.StartsWith(cookieValue, StringComparison.CurrentCulture)
+                        : Model.CookieValue.StartsWith(cookieValue, StringComparison.CurrentCultureIgnoreCase));
+
+                case CookieValueCondition.EndsWith:
+                    return !(Model.CaseSensitive
+                        ? Model.CookieValue.EndsWith(cookieValue, StringComparison.CurrentCulture)
+                        : Model.CookieValue.EndsWith(cookieValue, StringComparison.CurrentCultureIgnoreCase));
+
                 default:
                     return false;
             }
