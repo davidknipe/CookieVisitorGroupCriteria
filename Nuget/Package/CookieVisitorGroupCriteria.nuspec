@@ -3,15 +3,15 @@
   <metadata>
     <id>CookieVisitorGroupCriteria</id>
     <title>Episerver Visitor Group Criteria for Cookies</title>
-    <version>11.0.2</version>
+    <version>11.1.0</version>
     <authors>David Knipe, Vincent Baaij</authors>
     <owners>David Knipe</owners>
     <licenseUrl>https://github.com/davidknipe/CookieVisitorGroupCriteria/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>http://www.david-tec.com/2015/09/cookie-visitor-group-criteria-for-episerver/</projectUrl>
-   	<iconUrl>http://www.david-tec.com/global/media/nugeticons/CookieVisitorGroupCriteria.png?v=1.0.0</iconUrl>
+   	<iconUrl>http://www.david-tec.com/global/media/nugeticons/CookieVisitorGroupCriteria.png?v=11.1.0</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>VisitorGroup criteria for EPiServer to check if cookies exist or for the values in cookies.</description>
-    <releaseNotes>v11.0.2 Fixes issue with contains criterion</releaseNotes>
+    <description>VisitorGroup criteria for Episerver to check if cookies exist or for the values in cookies.</description>
+    <releaseNotes>v11.1.0 Added option for startswith and endswith on cookie value (thanks matt656 on Github)</releaseNotes>
     <tags>Episerver VisitorGroups Personalisation Cookies CookieVisitorGroupCriteria</tags>
     <dependencies>
       <dependency id="EPiServer.CMS.Core" version="[11.0, 12.0)" />
