@@ -1,8 +1,8 @@
 ﻿using System.Security.Principal;
-using System.Web;
 using CookieVisitorGroupCriteria.Enums;
 using CookieVisitorGroupCriteria.Models;
 using EPiServer.Personalization.VisitorGroups;
+using Microsoft.AspNetCore.Http;
 
 namespace CookieVisitorGroupCriteria.Criterion
 {
@@ -13,7 +13,7 @@ namespace CookieVisitorGroupCriteria.Criterion
         LanguagePath = "/cookievisitorgroups/criteria/cookieexistscriterion")]
     public class CookieExistsCriterion : CriterionBase<CookieExistsCriterionModel>
     {
-        public override bool IsMatch(IPrincipal principal, HttpContextBase httpContext)
+        public override bool IsMatch(IPrincipal principal, HttpContext httpContext)
         {
             var cookie = httpContext.Request.Cookies[Model.CookieName];
 

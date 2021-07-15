@@ -1,0 +1,126 @@
+2021-07-05 16:53:30.614 +01:00 [INF] Loaded 3 extensions
+2021-07-05 16:53:32.701 +01:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.201\
+2021-07-05 16:53:37.149 +01:00 [INF] Initializing upgrade step Select an entrypoint
+2021-07-05 16:53:37.154 +01:00 [INF] Setting entrypoint to only project in solution: F:\_github\CookieVisitorGroupCriteria\CookieVisitorGroupCriteria\CookieVisitorGroupCriteria.csproj
+2021-07-05 16:53:37.165 +01:00 [INF] Initializing upgrade step Select project to upgrade
+2021-07-05 16:53:37.207 +01:00 [INF] Initializing upgrade step Back up project
+2021-07-05 16:53:39.516 +01:00 [INF] Applying upgrade step Back up project
+2021-07-05 16:53:42.398 +01:00 [INF] Backing up F:\_github\CookieVisitorGroupCriteria\CookieVisitorGroupCriteria to F:\_github\CookieVisitorGroupCriteria\Solution.backup\CookieVisitorGroupCriteria
+2021-07-05 16:53:57.263 +01:00 [INF] Project backed up to F:\_github\CookieVisitorGroupCriteria\Solution.backup\CookieVisitorGroupCriteria
+2021-07-05 16:53:57.265 +01:00 [INF] Upgrade step Back up project applied successfully
+2021-07-05 16:54:04.110 +01:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-07-05 16:54:06.706 +01:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-07-05 16:54:06.709 +01:00 [INF] Converting project file format with try-convert, version 0.7.226301
+2021-07-05 16:54:07.075 +01:00 [INF] [dotnet] F:\_github\CookieVisitorGroupCriteria\CookieVisitorGroupCriteria\CookieVisitorGroupCriteria.csproj contains a reference to System.Web, which is not supported on .NET Core. You may have significant work ahead of you to fully port this project.
+2021-07-05 16:54:08.837 +01:00 [INF] [dotnet] Conversion complete!
+2021-07-05 16:54:09.359 +01:00 [INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
+2021-07-05 16:54:13.594 +01:00 [INF] Upgrade step Convert project file to SDK style applied successfully
+2021-07-05 16:54:17.215 +01:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-07-05 16:54:18.680 +01:00 [INF] Marking package System.ComponentModel.Annotations, Version=4.4.0 for removal because it is referenced elsewhere in the project with a higher version
+2021-07-05 16:54:18.711 +01:00 [INF] Marking package Castle.Core for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.714 +01:00 [INF] Marking package Castle.Windsor for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.719 +01:00 [INF] Marking package EPiServer.CMS.Core for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.721 +01:00 [INF] Marking package EPiServer.Framework for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.727 +01:00 [INF] Marking package EPiServer.Framework.AspNet for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.730 +01:00 [INF] Marking package Microsoft.AspNet.Mvc for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.762 +01:00 [INF] Marking package Microsoft.AspNet.Razor for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.765 +01:00 [INF] Marking package Microsoft.AspNet.WebPages for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.768 +01:00 [INF] Marking package Microsoft.Tpl.Dataflow for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.772 +01:00 [INF] Marking package Microsoft.Web.Infrastructure for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.775 +01:00 [INF] Marking package Newtonsoft.Json for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.778 +01:00 [INF] Marking package System.Data.SqlClient for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.781 +01:00 [INF] Marking package System.Reflection.Emit for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.784 +01:00 [INF] Marking package System.Security.AccessControl for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.787 +01:00 [INF] Marking package System.Security.Cryptography.Xml for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.790 +01:00 [INF] Marking package System.Security.Permissions for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.793 +01:00 [INF] Marking package System.Security.Principal.Windows for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.795 +01:00 [INF] Marking package System.Threading.AccessControl for removal because it appears to be a transitive dependency
+2021-07-05 16:54:18.805 +01:00 [INF] Marking assembly reference System.Configuration for removal based on package mapping configuration System.Configuration
+2021-07-05 16:54:18.811 +01:00 [INF] Adding package System.Configuration.ConfigurationManager based on package mapping configuration System.Configuration
+2021-07-05 16:54:21.927 +01:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.233001) needs added
+2021-07-05 16:54:21.943 +01:00 [INF] References to be removed: System.Configuration
+2021-07-05 16:54:21.944 +01:00 [INF] Packages to be removed: System.ComponentModel.Annotations, Version=4.4.0
+Castle.Core, Version=4.2.1
+Castle.Windsor, Version=4.1.0
+EPiServer.CMS.Core, Version=11.1.0
+EPiServer.Framework, Version=11.1.0
+EPiServer.Framework.AspNet, Version=11.1.0
+Microsoft.AspNet.Mvc, Version=4.0.20710.0
+Microsoft.AspNet.Razor, Version=2.0.20710.0
+Microsoft.AspNet.WebPages, Version=2.0.20710.0
+Microsoft.Tpl.Dataflow, Version=4.5.24
+Microsoft.Web.Infrastructure, Version=1.0.0.0
+Newtonsoft.Json, Version=9.0.1
+System.Data.SqlClient, Version=4.4.0
+System.Reflection.Emit, Version=4.3.0
+System.Security.AccessControl, Version=4.4.0
+System.Security.Cryptography.Xml, Version=4.4.0
+System.Security.Permissions, Version=4.4.0
+System.Security.Principal.Windows, Version=4.4.0
+System.Threading.AccessControl, Version=4.4.0
+2021-07-05 16:54:21.950 +01:00 [INF] Packages to be added: System.Configuration.ConfigurationManager, Version=5.0.0
+Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.233001
+2021-07-05 16:54:24.315 +01:00 [INF] Applying upgrade step Clean up NuGet package references
+2021-07-05 16:54:24.323 +01:00 [INF] Removing outdated assembly reference: System.Configuration
+2021-07-05 16:54:24.327 +01:00 [INF] Removing outdated package reference: Castle.Core, Version=4.2.1
+2021-07-05 16:54:24.328 +01:00 [INF] Removing outdated package reference: Castle.Windsor, Version=4.1.0
+2021-07-05 16:54:24.330 +01:00 [INF] Removing outdated package reference: EPiServer.CMS.Core, Version=11.1.0
+2021-07-05 16:54:24.331 +01:00 [INF] Removing outdated package reference: EPiServer.Framework, Version=11.1.0
+2021-07-05 16:54:24.333 +01:00 [INF] Removing outdated package reference: EPiServer.Framework.AspNet, Version=11.1.0
+2021-07-05 16:54:24.336 +01:00 [INF] Removing outdated package reference: Microsoft.AspNet.Mvc, Version=4.0.20710.0
+2021-07-05 16:54:24.337 +01:00 [INF] Removing outdated package reference: Microsoft.AspNet.Razor, Version=2.0.20710.0
+2021-07-05 16:54:24.339 +01:00 [INF] Removing outdated package reference: Microsoft.AspNet.WebPages, Version=2.0.20710.0
+2021-07-05 16:54:24.341 +01:00 [INF] Removing outdated package reference: Microsoft.Tpl.Dataflow, Version=4.5.24
+2021-07-05 16:54:24.342 +01:00 [INF] Removing outdated package reference: Microsoft.Web.Infrastructure, Version=1.0.0.0
+2021-07-05 16:54:24.345 +01:00 [INF] Removing outdated package reference: Newtonsoft.Json, Version=9.0.1
+2021-07-05 16:54:24.346 +01:00 [INF] Removing outdated package reference: System.ComponentModel.Annotations, Version=4.4.0
+2021-07-05 16:54:24.348 +01:00 [INF] Removing outdated package reference: System.Data.SqlClient, Version=4.4.0
+2021-07-05 16:54:24.349 +01:00 [INF] Removing outdated package reference: System.Reflection.Emit, Version=4.3.0
+2021-07-05 16:54:24.351 +01:00 [INF] Removing outdated package reference: System.Security.AccessControl, Version=4.4.0
+2021-07-05 16:54:24.352 +01:00 [INF] Removing outdated package reference: System.Security.Cryptography.Xml, Version=4.4.0
+2021-07-05 16:54:24.356 +01:00 [INF] Removing outdated package reference: System.Security.Permissions, Version=4.4.0
+2021-07-05 16:54:24.357 +01:00 [INF] Removing outdated package reference: System.Security.Principal.Windows, Version=4.4.0
+2021-07-05 16:54:24.359 +01:00 [INF] Removing outdated package reference: System.Threading.AccessControl, Version=4.4.0
+2021-07-05 16:54:24.362 +01:00 [INF] Adding package reference: System.Configuration.ConfigurationManager, Version=5.0.0
+2021-07-05 16:54:24.363 +01:00 [INF] Adding package reference: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.233001
+2021-07-05 16:54:26.458 +01:00 [INF] Upgrade step Clean up NuGet package references applied successfully
+2021-07-05 16:54:27.848 +01:00 [INF] Initializing upgrade step Update TFM
+2021-07-05 16:54:27.862 +01:00 [INF] TFM needs updated to net5.0
+2021-07-05 16:54:29.451 +01:00 [INF] Applying upgrade step Update TFM
+2021-07-05 16:54:33.722 +01:00 [INF] Updated TFM to net5.0
+2021-07-05 16:54:33.723 +01:00 [INF] Upgrade step Update TFM applied successfully
+2021-07-05 16:54:34.940 +01:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-07-05 16:54:37.077 +01:00 [INF] Marking assembly reference System.Web for removal based on package mapping configuration ASP.NET
+2021-07-05 16:54:37.079 +01:00 [INF] Adding framework reference Microsoft.AspNetCore.App based on package mapping configuration ASP.NET
+2021-07-05 16:54:37.837 +01:00 [INF] Marking package EPiServer.CMS.AspNet, Version=11.1.0 for removal because it doesn't support the target framework but a newer version (11.20.7) does
+2021-07-05 16:54:39.114 +01:00 [WRN] No version of EPiServer.CMS.AspNet found that supports ["net5.0"]; leaving unchanged
+2021-07-05 16:54:39.127 +01:00 [INF] References to be removed: System.Web
+2021-07-05 16:54:39.128 +01:00 [INF] Packages to be removed: EPiServer.CMS.AspNet, Version=11.1.0
+2021-07-05 16:54:39.129 +01:00 [INF] Packages to be added: EPiServer.CMS.AspNet, Version=11.20.7
+2021-07-05 16:54:39.130 +01:00 [INF] Framework references to be added: Microsoft.AspNetCore.App
+2021-07-05 16:54:43.139 +01:00 [INF] Applying upgrade step Update NuGet Packages
+2021-07-05 16:54:43.142 +01:00 [INF] Removing outdated assembly reference: System.Web
+2021-07-05 16:54:43.143 +01:00 [INF] Removing outdated package reference: EPiServer.CMS.AspNet, Version=11.1.0
+2021-07-05 16:54:43.145 +01:00 [INF] Adding package reference: EPiServer.CMS.AspNet, Version=11.20.7
+2021-07-05 16:54:43.147 +01:00 [INF] Adding framework reference: Microsoft.AspNetCore.App
+2021-07-05 16:54:50.708 +01:00 [WRN] No version of EPiServer.CMS.AspNet found that supports ["net5.0"]; leaving unchanged
+2021-07-05 16:54:50.716 +01:00 [INF] Upgrade step Update NuGet Packages applied successfully
+2021-07-05 16:55:00.119 +01:00 [INF] Initializing upgrade step Add template files
+2021-07-05 16:55:00.132 +01:00 [INF] 0 expected template items needed
+2021-07-05 16:55:00.143 +01:00 [INF] Initializing upgrade step Update source code
+2021-07-05 16:55:06.369 +01:00 [INF] Applying upgrade step Apply fix for UA0001: ASP.NET Core projects should not reference ASP.NET namespaces
+2021-07-05 16:55:06.713 +01:00 [INF] Diagnostic UA0001 fixed in F:\_github\CookieVisitorGroupCriteria\CookieVisitorGroupCriteria\Criterion\CookieExistsCriterion.cs
+2021-07-05 16:55:06.751 +01:00 [INF] Diagnostic UA0001 fixed in F:\_github\CookieVisitorGroupCriteria\CookieVisitorGroupCriteria\Criterion\CookieValueCriterion.cs
+2021-07-05 16:55:06.876 +01:00 [INF] Upgrade step Apply fix for UA0001: ASP.NET Core projects should not reference ASP.NET namespaces applied successfully
+2021-07-05 16:55:10.530 +01:00 [INF] Applying upgrade step Apply fix for UA0005: Do not use HttpContext.Current
+2021-07-05 16:55:11.019 +01:00 [INF] Diagnostic UA0005 fixed in F:\_github\CookieVisitorGroupCriteria\CookieVisitorGroupCriteria\Criterion\CookieValueCriterion.cs
+2021-07-05 16:55:11.224 +01:00 [INF] Applying upgrade step Update source code
+2021-07-05 16:55:11.881 +01:00 [INF] Upgrade step Update source code applied successfully
+2021-07-05 16:55:11.882 +01:00 [INF] Upgrade step Apply fix for UA0005: Do not use HttpContext.Current applied successfully
+2021-07-05 16:55:14.019 +01:00 [INF] Initializing upgrade step Move to next project
+2021-07-05 16:55:15.473 +01:00 [INF] Applying upgrade step Move to next project
+2021-07-05 16:55:15.476 +01:00 [INF] Upgrade step Move to next project applied successfully
+2021-07-05 16:55:17.463 +01:00 [INF] Initializing upgrade step Finalize upgrade
+2021-07-05 16:55:19.953 +01:00 [INF] Applying upgrade step Finalize upgrade
+2021-07-05 16:55:19.956 +01:00 [INF] Upgrade step Finalize upgrade applied successfully
+2021-07-05 16:55:21.935 +01:00 [INF] Upgrade has completed. Please review any changes.

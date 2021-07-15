@@ -19,7 +19,8 @@ namespace CookieVisitorGroupCriteria.Models
         /// <summary>
         /// The condition to apply when checking the cookie value
         /// </summary>
-        [Required, DojoWidget(SelectionFactoryType = typeof(EnumSelectionFactory))]
+        [Required]
+        [CriterionPropertyEditor(SelectionFactoryType = typeof(EnumSelectionFactory))]
         public CookieValueCondition Condition { get; set; }
 
         /// <summary>
@@ -31,6 +32,7 @@ namespace CookieVisitorGroupCriteria.Models
         /// <summary>
         /// Whether the value check is case senstive or not
         /// </summary>
+        [CriterionPropertyEditor(LabelTranslationKey = "/cookievisitorgroupcriteria/casesensitive")]
         public bool CaseSensitive { get; set; }
 
         public override ICriterionModel Copy()

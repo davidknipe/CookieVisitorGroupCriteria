@@ -1,14 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieVisitorGroupCriteria", "..\CookieVisitorGroupCriteria\CookieVisitorGroupCriteria.csproj", "{CEB82ABC-A030-4ECA-A002-B0139050783C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookieVisitorGroupCriteria", "..\CookieVisitorGroupCriteria\CookieVisitorGroupCriteria.csproj", "{CEB82ABC-A030-4ECA-A002-B0139050783C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{E03843E1-E565-4CE7-8AF6-5FF79859701A}"
 	ProjectSection(SolutionItems) = preProject
-		..\Nuget\Package\CookieVisitorGroupCriteria.nuspec = ..\Nuget\Package\CookieVisitorGroupCriteria.nuspec
-		..\Nuget\pack.bat = ..\Nuget\pack.bat
+		..\Nuget\CookieVisitorGroupCriteria.png = ..\Nuget\CookieVisitorGroupCriteria.png
 	EndProjectSection
 EndProject
 Global
@@ -24,5 +23,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D175873-8712-44B3-8A7F-1072AB122A89}
 	EndGlobalSection
 EndGlobal

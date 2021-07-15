@@ -12,12 +12,14 @@ namespace CookieVisitorGroupCriteria.Models
     {
         [Required]
         public string CookieName { get; set; }
-        [Required, DojoWidget(SelectionFactoryType = typeof(EnumSelectionFactory))]
+
+        [Required]
+        [CriterionPropertyEditor(SelectionFactoryType = typeof(EnumSelectionFactory))]
         public CookieExistsCondition Condition { get; set; }
 
         public override ICriterionModel Copy()
         {
-            return base.ShallowCopy();
+            return ShallowCopy();
         }
     }
 }

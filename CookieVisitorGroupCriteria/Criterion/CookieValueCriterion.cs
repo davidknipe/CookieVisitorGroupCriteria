@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Security.Principal;
-using System.Web;
 using CookieVisitorGroupCriteria.Enums;
 using CookieVisitorGroupCriteria.Models;
 using EPiServer.Personalization.VisitorGroups;
+using Microsoft.AspNetCore.Http;
 
 namespace CookieVisitorGroupCriteria.Criterion
 {
@@ -13,15 +13,15 @@ namespace CookieVisitorGroupCriteria.Criterion
         DisplayName = "Cookie value")]
     public class CookieValueCriteria : CriterionBase<CookieValueCriterionModel>
     {
-        public override bool IsMatch(IPrincipal principal, HttpContextBase httpContext)
+        public override bool IsMatch(IPrincipal principal, HttpContext httpContext)
         {
-            var cookie = HttpContext.Current.Request.Cookies[Model.CookieName];
+            var cookie = httpContext.Request.Cookies[Model.CookieName];
             if (cookie == null)
             {
                 return false;
             }
 
-            var cookieValue = cookie.Value;
+            var cookieValue = cookie;
             if (string.IsNullOrWhiteSpace(cookieValue))
             {
                 return false;
